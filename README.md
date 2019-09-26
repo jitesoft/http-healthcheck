@@ -26,13 +26,13 @@ Clone, there are no dependencies, so just go!
 The supplied makefile will (by invoking docker) build the binaries for linux, windows and darwin. The linux and darwin
 binaries are only built in amd64 version, while the linux binaries are built for amd64, arm64, ppc64le, s390x and 386 for
 both standard linux and linux distros using musl (like alpine linux). Binaries will be placed in the `bin` directory
-and are named as following: `http-healthcheck-<OS>(-musl)-<ARCH>(.ext?)`.
+gzipped and ready for release! They are named as following: `http-healthcheck-<OS>(-musl)-<ARCH>.tar.gz`.
 
 Examples:
 
 ```
-bin/http-healthcheck-windows-amd64.exe
-bin/http-healthcheck-linux-arm64
-bin/http-healthcheck-linux-musl-s390x
-bin/http-healthcheck-dawrin-amd64
+bin/http-healthcheck-windows-amd64.tar.gz
+bin/http-healthcheck-linux-arm64.tar.gz
+bin/http-healthcheck-linux-musl-s390x.tar.gz
+bin/http-healthcheck-dawrin-amd64.tar.gz
 ```
